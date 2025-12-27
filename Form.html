@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demande de Création de Site Web</title>
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Firebase App (nécessaire pour tous les services Firebase) -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCpRxLgAk900InJByTL0fK5EtIQUtwRfxw",
+    authDomain: "autent-f5543.firebaseapp.com",
+    projectId: "autent-f5543",
+    storageBucket: "autent-f5543.firebasestorage.app",
+    messagingSenderId: "48498919056",
+    appId: "1:48498919056:web:769b8477fd6314a6f63a15",
+    measurementId: "G-ZFLSV456XR"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    max-width: 650px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-container h2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-container p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    color: #764ba2;
+    font-size: 15px;
+}
+
+.form-control {
+    border-radius: 30px;
+    padding: 13px 20px 13px 45px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 0.15rem rgba(118,75,162,.25);
+}
+
+textarea.form-control {
+    border-radius: 20px;
+    resize: none;
+}
+
+/* ===== SELECT SERVICE ===== */
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    padding-left: 52px !important;
+    padding-right: 45px !important;
+    appearance: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.icon-left {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    color: #764ba2;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.icon-right {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    color: #764ba2;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+/* ===== BUTTON ===== */
+.btn-submit {
+    width: 100%;
+    border-radius: 35px;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-submit i {
+    margin-right: 8px;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 35px rgba(102,126,234,0.45);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="form-container mx-auto">
+        <h2>Demande d'un Services</h2>
+        <p>Parlez-nous de votre projet 🚀</p>
+
+        <form id="websiteRequestForm" method="POST" action="send.php">
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Nom</label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="nom" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Postnom</label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                        <input type="text" name="postnom" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Contact</label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" name="contact" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Description du projet</label>
+                <div class="input-icon">
+                    <i class="fa-solid fa-pen"></i>
+                    <textarea name="description" class="form-control" rows="3" required></textarea>
+                </div>
+            </div>
+
+            <!-- SERVICE -->
+            <div class="form-group">
+                <label>Service demandé</label>
+                <div class="select-wrapper">
+                    <i id="serviceIcon" class="fa-solid fa-briefcase icon-left"></i>
+                    <i class="fa-solid fa-chevron-down icon-right"></i>
+
+                    <select id="serviceSelect" name="service" class="form-control" required>
+                        <option value="">Choisissez un service</option>
+                        <option value="vitrine">🌐 Site Vitrine</option>
+                        <option value="ecommerce">🛒 Site E-commerce</option>
+                        <option value="agence">🏢 Site Agence</option>
+                        <option value="entreprise">🏭 Site Entreprise</option>
+                        <option value="mobile">📱 Application Mobile</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Message supplémentaire</label>
+                <div class="input-icon">
+                    <i class="fa-solid fa-message"></i>
+                    <textarea name="message" class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-submit mt-4">
+                <i class="fa-solid fa-paper-plane"></i> Envoyer la demande
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<!-- JS ICON DYNAMIQUE -->
+<script>
+const serviceSelect = document.getElementById("serviceSelect");
+const serviceIcon = document.getElementById("serviceIcon");
+
+serviceSelect.addEventListener("change", function () {
+    serviceIcon.className = "fa-solid icon-left";
+
+    const icons = {
+        vitrine: "fa-globe",
+        ecommerce: "fa-cart-shopping",
+        agence: "fa-building",
+        entreprise: "fa-industry",
+        mobile: "fa-mobile-screen-button"
+    };
+
+    serviceIcon.classList.add(icons[this.value] || "fa-briefcase");
+});
+</script>
+
+</body>
+</html>

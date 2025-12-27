@@ -1,0 +1,263 @@
+/* =============================
+   GLOBAL
+============================= */
+body {
+  background: radial-gradient(circle at top, #eef2ff, #f8fafc);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* =============================
+   CARTE PANIER (GLASS)
+============================= */
+.cart-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* =============================
+   TITRE
+============================= */
+.cart-card h3 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cart-card h3 i {
+  color: #4f46e5;
+  animation: cartPulse 2.5s infinite;
+}
+
+@keyframes cartPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* =============================
+   PANIER VIDE
+============================= */
+.empty-cart {
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-top: 20px;
+}
+
+/* =============================
+   LISTE PRODUITS
+============================= */
+.list-group-item {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border: none;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.list-group-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.14);
+}
+
+/* =============================
+   TOTAL
+============================= */
+#cart-total {
+  color: #16a34a;
+  font-size: 1.8rem;
+}
+
+/* =============================
+   BOUTON CONTINUER
+============================= */
+.btn-continue-shopping {
+  margin-top: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f8fafc, #e0e7ff);
+  color: #1e293b;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #c7d2fe;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.25);
+  transition: all 0.35s ease;
+}
+
+.btn-continue-shopping i {
+  transition: transform 0.35s ease;
+}
+
+.btn-continue-shopping:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(79, 70, 229, 0.35);
+}
+
+.btn-continue-shopping:hover i {
+  transform: translateX(-6px);
+}
+
+/* =============================
+   BOUTONS ACTIONS
+============================= */
+#clear-cart,
+#checkout {
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clear-cart:hover,
+#checkout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+/* =============================
+   MOBILE
+============================= */
+@media (max-width: 576px) {
+  .cart-card {
+    padding: 22px;
+  }
+
+  #cart-total {
+    font-size: 1.4rem;
+  }
+
+  .btn-continue-shopping,
+  #clear-cart,
+  #checkout {
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+  }
+}
+
+
+
+/* =============================
+   ACTIONS PANIER
+============================= */
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Quantité */
+.cart-actions span {
+  min-width: 32px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+/* Boutons + et - */
+.cart-actions button {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #f3f4f6;
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Hover + / - */
+.cart-actions button:hover {
+  background: #e5e7eb;
+  transform: scale(1.1);
+}
+
+/* Clic */
+.cart-actions button:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Bouton PLUS */
+.cart-actions button:last-of-type:not(.remove) {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+}
+
+.cart-actions button:last-of-type:not(.remove):hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+/* Bouton MOINS */
+.cart-actions button:first-of-type {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+}
+
+.cart-actions button:first-of-type:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+}
+
+/* =============================
+   BOUTON SUPPRIMER (X)
+============================= */
+.cart-actions .remove {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(239, 68, 68, 0.35);
+}
+
+.cart-actions .remove:hover {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 10px 22px rgba(239, 68, 68, 0.55);
+}
+
+.cart-actions .remove:active {
+  transform: scale(0.9);
+}
+
+/* Icône */
+.cart-actions .remove i {
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .cart-actions button {
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce | Accueil</title>
+  <style>
+    /* =============================
+   ADMIN SECTION
+============================= */
+.admin-section {
+  padding: 120px 0;
+ 
+}
+
+/* CARD */
+.admin-card {
+  max-width: 700px;
+  margin: auto;
+  padding: 50px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+/* HEADER */
+.admin-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admin-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.admin-header p {
+  color: #3577d3;
+}
+
+/* FORM */
+.admin-form {
+  display: grid;
+  gap: 22px;
+}
+
+/* GROUP */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  background: #c9cde1;
+  color: #fff;
+}
+
+/* UPLOAD */
+.upload-group {
+  text-align: center;
+}
+
+.upload-box {
+  border: 2px dashed #2563eb;
+  padding: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.upload-box:hover {
+  background: rgba(37,99,235,0.15);
+}
+
+.upload-box i {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+#previewImage {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 15px;
+  display: none;
+}
+
+/* BUTTON */
+.btn-admin {
+  padding: 15px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+.btn-admin:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(37,99,235,0.6);
+}
+
+  </style>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+
+  <!-- Style perso -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🌐 NAVBAR MODERNE -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold fs-3 text-primary" href="#">
+        <i class="fa-solid fa-bag-shopping"></i> ShopModern
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-3 align-items-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Accueil</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Produits</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn btn-primary px-4 rounded-pill" href="cart.html">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Panier
+            </a>
+          </li>
+          <!-- BOUTON COMPTE -->
+          <li class="nav-item dropdown account-dropdown">
+            <a class="btn btn-account rounded-pill px-4" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-user me-1"></i> Compte
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end account-menu shadow-lg">
+              <li>
+                <a class="dropdown-item" href="login.html">
+                  <i class="fa-solid fa-right-to-bracket me-2"></i> Se connecter
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="register.html">
+                  <i class="fa-solid fa-user-plus me-2"></i> S’inscrire
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🎯 HERO SECTION MODERNE -->
+  <header class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3 animate-fade">
+        Découvrez les meilleurs produits
+      </h1>
+      <p class="fs-5 mb-4 animate-fade delay-1">
+        Qualité supérieure — Prix imbattables — Livraison rapide
+      </p>
+      <a href="products.html" class="btn btn-light btn-lg px-5 py-2 rounded-pill shadow animate-fade delay-2">
+        Explorer maintenant
+      </a>
+    </div>
+  </header>
+
+
+
+  </section>
+
+<section class="admin-section">
+  <div class="container">
+
+    <div class="admin-card">
+
+      <!-- HEADER -->
+      <div class="admin-header">
+        <h2>Ajouter un produit</h2>
+        <p>Remplissez les informations du produit</p>
+      </div>
+
+      <!-- FORM -->
+      <form class="admin-form">
+
+        <!-- TITRE -->
+        <div class="form-group">
+          <label>Titre du produit</label>
+          <input type="text" placeholder="Ex : Montre Luxe" required>
+        </div>
+
+        <!-- PRIX -->
+        <div class="form-group">
+          <label>Prix (DT)</label>
+          <input type="number" placeholder="Ex : 199" required>
+        </div>
+
+        <!-- CATEGORIE -->
+        <div class="form-group">
+          <label>Catégorie</label>
+          <select>
+            <option>Vêtements</option>
+            <option>Montres</option>
+            <option>Chaussures</option>
+            <option>Téléphones</option>
+            <option>Ordinateurs</option>
+            <option>Accessoires</option>
+          </select>
+        </div>
+
+        <!-- URL -->
+        <div class="form-group">
+          <label>URL du produit</label>
+          <input type="text" placeholder="products.html?id=1">
+        </div>
+
+        <!-- IMAGE -->
+        <div class="form-group upload-group">
+          <label>Image du produit</label>
+
+          <input type="file" id="imageUpload" accept="image/*" hidden>
+
+          <label for="imageUpload" class="upload-box">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <span>Importer une image</span>
+          </label>
+
+          <img id="previewImage">
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div class="form-group">
+          <label>Description</label>
+          <textarea rows="4" placeholder="Description du produit..."></textarea>
+        </div>
+
+        <!-- BUTTON -->
+        <button type="submit" class="btn-admin">
+          <i class="fa-solid fa-plus"></i> Ajouter le produit
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector(".navbar");
+      nav.classList.toggle("scrolled", window.scrollY > 50);
+    });
+     const gallery = document.getElementById("galleryScroll");
+  const next = document.querySelector(".gallery-btn.next");
+  const prev = document.querySelector(".gallery-btn.prev");
+
+  const scrollValue = 350;
+
+  next.onclick = () => gallery.scrollLeft += scrollValue;
+  prev.onclick = () => gallery.scrollLeft -= scrollValue;
+  </script>
+
+
+</body>
+
+</html>

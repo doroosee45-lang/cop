@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce | Accueil</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Style perso -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🌐 NAVBAR MODERNE -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-3 text-primary" href="#">
+                <i class="fa-solid fa-bag-shopping"></i> Omedev services
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-3 align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="produithomme.html"> Hommes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Femme.html">femmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ordinateurs.html">Ordinateur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Telephones.html">telephone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Montre.html">Montré</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accessoires.html">Accesoires</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="btn btn-primary px-4 rounded-pill position-relative" href="cart.html">
+                            <i class="fa-solid fa-cart-shopping me-1"></i> Panier
+                            <span id="cart-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 🎯 HERO SECTION MODERNE -->
+    <header class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3 animate-fade">
+                Découvrez les meilleurs produits
+            </h1>
+            <p class="fs-5 mb-4 animate-fade delay-1">
+                Qualité supérieure — Prix imbattables — Livraison rapide
+            </p>
+            <a href="products.html" class="btn btn-light btn-lg px-5 py-2 rounded-pill shadow animate-fade delay-2">
+                Explorer maintenant
+            </a>
+        </div>
+    </header>
+
+
+
+
+
+    <!--Notre mission-->
+
+    <section id="mission" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- TEXTE GAUCHE -->
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="about-content">
+                        <span class="badge-about">Notre mission</span>
+
+                        <h2>Accompagner votre croissance digitale</h2>
+
+                        <p>
+                            Notre mission est d’aider les entreprises à exploiter pleinement
+                            le potentiel du numérique grâce à des solutions fiables,
+                            évolutives et centrées sur l’utilisateur.
+                        </p>
+
+                        <ul class="about-list">
+                            <li><i class="fa-solid fa-check"></i> Solutions digitales sur mesure</li>
+                            <li><i class="fa-solid fa-check"></i> Performance & sécurité</li>
+                            <li><i class="fa-solid fa-check"></i> Suivi et accompagnement continu</li>
+                        </ul>
+
+                        <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                            Découvrir notre mission
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IMAGE DROITE : CAROUSEL -->
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div id="missionCarousel" class="carousel slide carousel-fade about-carousel"
+                        data-bs-ride="carousel" data-bs-interval="4000">
+
+                        <div class="carousel-inner rounded-4 shadow-lg">
+
+                            <!-- SLIDE 1 -->
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                                    class="d-block w-100 about-carousel-img" alt="Collaboration">
+
+                                <div class="carousel-text">
+                                    <h3>Collaboration & Partenariat</h3>
+                                    <p>Construisons ensemble des solutions digitales durables</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                                    class="d-block w-100 about-carousel-img" alt="Innovation">
+
+                                <div class="carousel-text">
+                                    <h3>Innovation & Technologie</h3>
+                                    <p>Des outils modernes pour des performances élevées</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 -->
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                                    class="d-block w-100 about-carousel-img" alt="Expertise">
+
+                                <div class="carousel-text">
+                                    <h3>Expertise & Savoir-faire</h3>
+                                    <p>Une équipe qualifiée au service de vos projets</p>
+                                </div>
+                            </div>
+
+                            <!-- CONTROLS -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#missionCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#missionCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+    <!-- CAtegorie de produit Homme -->
+    <section id="shop-categories" class="shop-section">
+        <div class="container">
+
+            <!-- TITRE -->
+            <div class="section-header text-center mb-5">
+                <span class="badge-section">Nos catégories</span>
+                <h2>Nos Produit Home </h2>
+                <p>Des produits tendances sélectionnés avec soin</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- VETEMENTS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-clothes">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        <img src="https://media.istockphoto.com/id/1300966679/fr/photo/jeune-homme-beau-dans-le-proc%C3%A8s-classique-au-dessus-du-fond-de-lac.jpg?s=612x612&w=0&k=20&c=2N9AWtVs77exStV6HrcAPaV8MtxvaqpbwRFPzAyHako="
+                            alt="">
+                        <div class="shop-content">
+                            <h4>Vêtements</h4>
+                            <p>Style moderne & qualité premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MONTRES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-watch">
+                            <i class="fa-solid fa-person-swimming"></i>
+                        </div>
+                        <img src="https://media.cdnws.com/_i/207697/28603/1063/4/bazin-homme-africain.jpeg" alt="">
+                        <div class="shop-content">
+                            <h4>Bassin de qualités</h4>
+                            <p>Élégance & précision</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ORDINATEURS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-pc">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/60/1b/64/601b64d89c4ff848ba40903620495ff4.jpg" alt="">
+                        <div class="shop-content">
+                            <h4>Chaussures</h4>
+                            <p>Puissance & performance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAUSSURES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-shoes">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2016/06/Les-7-regles-dor-pour-bien-choisir-une-chemise-pour-homme-fort-ou-grand-1.jpg"
+                            alt="">
+                        <div class="shop-content">
+                            <h4>Chémise </h4>
+                            <p>Confort & tendance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAÎNETTES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-jewel">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <img src="https://chaine-bijoux.com/cdn/shop/files/chaine-collier-cubain-homme-49670831669593_1600x.jpg?v=1685698729"
+                            alt="">
+                        <div class="shop-content">
+                            <h4>Chaînettes</h4>
+                            <p>Bijoux élégants & raffinés</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TELEPHONES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-phone">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <img src="https://www.cravate-avenue.com/img/cms/Articles%20mode/2019-02-La%20ceinture/ceintures_cuir_couleur_homm.jpg"
+                            alt="">
+                        <div class="shop-content">
+                            <h4>Ceintures </h4>
+                            <p>Technologie de pointe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="featured-products" class="featured-section">
+        <div class="container">
+
+            <!-- TITRE -->
+            <div class="section-header text-center mb-5">
+                <span class="badge-section">Produits HOMME</span>
+                <h2>produits Homme phares </h2>
+                <p>Les meilleures ventes sélectionnées pour vous</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- PRODUIT -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+
+                        <span class="featured-badge">Sandale</span>
+
+                        <div class="featured-image">
+                            <img src="https://julesjenn.com/cdn/shop/files/sandales-homme-cuir-marron-s1.jpg?v=1749122731"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Sandales</h4>
+                            <p>Élégance & précision</p>
+
+                            <div class="featured-bottom">
+                                <span class="price">299 €</span>
+                                <button class="add-to-cart btn btn-dark" data-name="Sandales" data-price="299">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PRODUIT -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+
+                        <span class="featured-badge hot">Montre</span>
+
+                        <div class="featured-image">
+                            <img src="https://www.cdiscount.com/pdt2/0/6/8/1/700x700/sha6087876318068/rw/montre-homme-marque-pas-cher-lumineux-chronographe.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Montre</h4>
+                            <p>Performance ultime</p>
+
+                            <div class="featured-bottom">
+                                <span class="price">799 €</span>
+                                <button class="add-to-cart btn btn-dark" data-name="Montre " data-price="799">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PRODUIT -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+
+                        <span class="featured-badge new">Cartable</span>
+
+                        <div class="featured-image">
+                            <img src="https://www.mon-sac-a-dos.fr/wp-content/uploads/2020/10/Sac_cartable_classique_homme_1.jpeg"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Cartable </h4>
+                            <p>Puissance & rapidité</p>
+
+                            <div class="featured-bottom">
+                                <span class="price">129 €</span>
+                                <button class="add-to-cart btn btn-dark" data-name="Cartable" data-price="129">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PRODUIT -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+
+                        <span class="featured-badge sale">-20%</span>
+
+                        <div class="featured-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9x58O1Y5KXnzXclpOm3J3Z8zu5dVHsyKcw&s"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Tissus fernado</h4>
+                            <p>Confort & style</p>
+
+                            <div class="featured-bottom">
+                                <span class="price">
+                                    <small>199 €</small> 159 €
+                                </span>
+                                <button class="add-to-cart btn btn-dark" data-name="Tissus Fernando" data-price="159">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- BOUTON ACCÈS BOUTIQUE -->
+                <div class="text-center mt-5">
+                    <a href="shop.html" class="btn btn-primary btn-lg px-5 rounded-pill shadow-lg">
+                        <i class="fa-solid fa-store me-2"></i>
+                        Accéder au Produit homme
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--Produit femmes -->
+
+    <!-- CAtegorie de produit -->
+    <section id="shop-categories" class="shop-section">
+        <div class="container">
+
+            <!-- TITRE -->
+            <div class="section-header text-center mb-5">
+                <span class="badge-section">Produits femmes</span>
+                <h2>Nos Produit Femmes </h2>
+                <p>Des produits tendances sélectionnés avec soin</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- VETEMENTS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-clothes">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        <img src="https://mabrouk.tn/wp-content/uploads/2022/03/Artboard-1-copy-2-1.jpg" alt="">
+                        <div class="shop-content">
+                            <h4>Des Robes de qualités</h4>
+                            <p>Style moderne & qualité premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MONTRES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-watch">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <img src="https://m.media-amazon.com/images/I/61sgM7kGppL._AC_UF1000,1000_QL80_.jpg" alt="">
+                        <div class="shop-content">
+                            <h4>Sac A main</h4>
+                            <p>Élégance & précision</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ORDINATEURS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-pc">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="">
+                        <div class="shop-content">
+                            <h4>Ordinateurs</h4>
+                            <p>Puissance & performance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAUSSURES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-shoes">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                        </div>
+                        <img src="https://gemo-gemo-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/1534/1848/3e0de386b4525c72c1047b3f0fa4ef2dee3d5e52_8ec1f3ff-5db0-43e9-9fc4-front.jpeg"
+                            alt="">
+                        <div class="shop-content">
+                            <h4>Chaussures</h4>
+                            <p>Confort & tendance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAÎNETTES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-jewel">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpAe3VHxkADjg1PzleGynHaJ6WQg509KLIA&s"
+                            alt="">
+                        <div class="shop-content">
+                            <h4>Chaînettes</h4>
+                            <p>Bijoux élégants & raffinés</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TELEPHONES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-card">
+                        <div class="shop-icon bg-phone">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <img src="https://p.globalsources.com/IMAGES/PDT/B1218301762/Perruque-femme.jpg?ver=6039292636"
+                            alt="">
+                        <div class="shop-content">
+                            <h4>Téléphones</h4>
+                            <p>Technologie de pointe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </setion>
+
+            <section id="featured-products" class="featured-section">
+                <div class="container">
+
+                    <!-- TITRE -->
+                    <div class="section-header text-center mb-5">
+                        <span class="badge-section">Produits femmes</span>
+                        <h2>produits Femmes phares </h2>
+                        <p>Les meilleures ventes sélectionnées pour vous</p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge">MAQ</span>
+
+                                <div class="featured-image">
+                                    <img src="https://biosalines.com/cdn/shop/collections/BANNIERE_01.jpg?v=1721210071"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Soin de visages</h4>
+                                    <p>Trés efface pour la soin de visage </p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">299 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Soin de visage"
+                                            data-price="299">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge hot">Mont</span>
+
+                                <div class="featured-image">
+                                    <img src="https://hkstoretn.com/cdn/shop/files/IMG-20241107-WA0013_55d0a2b5-b15e-417f-8947-f2ea4f2856a4.jpg?v=1730991911"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Montre elegant</h4>
+                                    <p>Performance ultime</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">799 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Montré Elegant"
+                                            data-price="799">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge new">Cos</span>
+
+                                <div class="featured-image">
+                                    <img src="https://oplayce.ci/cdn/shop/files/5_2812b1e5-75cc-4794-add5-cc9b348f99d6_1024x.webp?v=1682714383"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Costume femmes</h4>
+                                    <p>Puissance & rapidité</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">1299 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Costume Femmes"
+                                            data-price="1299">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge sale">-20%</span>
+
+                                <div class="featured-image">
+                                    <img src="https://chillandlit.tn/158321-large_default/sandales-femme.jpg" alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Sandales</h4>
+                                    <p>Confort & style</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">
+                                            <small>199 €</small> 159 €
+                                        </span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Montre Premium"
+                                            data-price="159">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- BOUTON ACCÈS BOUTIQUE -->
+                        <div class="text-center mt-5">
+                            <a href="shop.html" class="btn btn-primary btn-lg px-5 rounded-pill shadow-lg">
+                                <i class="fa-solid fa-store me-2"></i>
+                                Accéder au Produit Femmes
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--Produit Mixes -->
+            <section id="shop-categories" class="shop-section">
+                <div class="container">
+
+                    <!-- TITRE -->
+                    <div class="section-header text-center mb-5">
+                        <span class="badge-section">TELEPHONES</span>
+                        <h2>NOS TELEPHONES </h2>
+                        <p>des Télephones puissants</p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- VETEMENTS -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-clothes">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <img src="https://images.samsung.com/is/image/samsung/assets/fr/2501/pcd/smartphones/PCD_P3_Main-KV_1440x640_pc_preview_v3.jpg?imwidth=1366"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>samsung </h4>
+                                    <p>S25 ultra</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MONTRES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-watch">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <img src="https://d13pvy8xd75yde.cloudfront.net/global/phones/spark10pro/images/bf-m.png"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>Techno</h4>
+                                    <p>Sparck 10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ORDINATEURS -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-pc">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <img src="https://i.ytimg.com/vi/2NP2zLejaZs/sddefault.jpg" alt="">
+                                <div class="shop-content">
+                                    <h4>Itel</h4>
+                                    <p>A 100</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CHAUSSURES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-shoes">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <img src="https://www.ooredoo.tn/Personal/9218-home_default/portable-infinix-hot40-pro-12256go.jpg"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>Iinfinix </h4>
+                                    <p>Hot 40</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CHAÎNETTES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-jewel">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <img src="https://i.ytimg.com/vi/F1aLO6uQFY4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDO7EYiJ8yijxbTueQFmj87zbBIbw"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>Reedmi</h4>
+                                    <p>Note 15</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TELEPHONES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-phone">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <img src="https://framerusercontent.com/images/mx1k7iZFd3XdIMADHLw8ymDnAo.webp?width=5125&height=3417"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>Iphones</h4>
+                                    <p>12 pro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="featured-products" class="featured-section">
+                <div class="container">
+
+                    <!-- TITRE -->
+                    <div class="section-header text-center mb-5">
+                        <span class="badge-section">Tendance</span>
+                        <h2>Telephones phares </h2>
+                        <p>Les meilleures ventes sélectionnées pour vous</p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge">PHARE</span>
+
+                                <div class="featured-image">
+                                    <img src="https://i.ytimg.com/vi/MsMtegyEz1g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDI-f8loqIzcLz4LdMPo3--FYl5_w"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Iphone</h4>
+                                    <p>17 pro</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">1200 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Iphone 17"
+                                            data-price="1200">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge hot">HOT</span>
+
+                                <div class="featured-image">
+                                    <img src="https://darty.tn/img/anblog/b/b-686fb2efef43a-anblog_thumb.png" alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Galaxy</h4>
+                                    <p>Flip7</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">799 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Galaxy Flip7"
+                                            data-price="799">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge new">NEW</span>
+
+                                <div class="featured-image">
+                                    <img src="https://cdn.lesnumeriques.com/optim/news/23/231127/30d08553-galaxy-z-fold-7-et-z-flip-7-samsung-abaisse-ses-ambitions-pour-ses-prochains-smartphones-pliants__1200_900__51-323-5991-3672.jpg"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>samsung</h4>
+                                    <p>Flip8</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">1299 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="samsung Flip7"
+                                            data-price="1299">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge sale">-20%</span>
+
+                                <div class="featured-image">
+                                    <img src="https://www.hstore.tn/2239-large_default/huawei-pura-80-ultra-16go-512go-prix-tunisie.jpg"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Pura 80</h4>
+                                    <p>Ultra</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">
+                                            <small>1999 €</small> 1599 €
+                                        </span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Pura 80" data-price="1599">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- BOUTON ACCÈS BOUTIQUE -->
+                        <div class="text-center mt-5">
+                            <a href="shop.html" class="btn btn-primary btn-lg px-5 rounded-pill shadow-lg">
+                                <i class="fa-solid fa-store me-2"></i>
+                                Accéder au Téléphones
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- TELEPHONES -->
+            <section id="shop-categories" class="shop-section">
+                <div class="container">
+
+                    <!-- TITRE -->
+                    <div class="section-header text-center mb-5">
+                        <span class="badge-section">Nos Ordinateurs</span>
+                        <h2>Nos Ordinateurs </h2>
+                        <p>Des produits tendances sélectionnés avec soin</p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- VETEMENTS -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-watch">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </div>
+                                <img src="https://digipress1.com/104-large_default/ordinateur.jpg" alt="">
+                                <div class="shop-content">
+                                    <h4>Orinateurs de bureau</h4>
+                                    <p>i5 Gth</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MONTRES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-pc">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </div>
+                                <img src="https://www.leparisien.fr/resizer/92Bbg9O_U7wOZ4OiwfcoLlCRyac=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/lpguideshopping/J2QOOQEQR74N2LX47YCVGPH5VU.jpg"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>HP </h4>
+                                    <p>11 Gth</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ORDINATEURS -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-pc">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </div>
+                                <img src="https://www.laptopspirit.fr/wp-content/uploads/new/2022/04/Asus-ZenBook-Pro-15-OLED-UM535QE-KY262W-1-1024x639.jpg"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>Assus </h4>
+                                    <p>Puissance & performance</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CHAUSSURES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-shoes">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </div>
+                                <img src="https://www.laptopspirit.fr/wp-content/uploads/new/2022/10/Huawei-MateBook-14-1.jpg"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>wuawei</h4>
+                                    <p>8 Gth</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CHAÎNETTES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-jewel">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </div>
+                                <img src="https://tunisiatech.tn/8081-large_default/pc-portable-dell-vostro-3400-i3-11gen-4go-1to.jpg"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>Delle</h4>
+                                    <p>8 Gth</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TELEPHONES -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shop-card">
+                                <div class="shop-icon bg-phone">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <img src="https://images-cdn.ubuy.co.in/641a0b8bfb2d784c8a1f8362-lenovo-thinkpad-t480s-windows-10-pro.jpg"
+                                    alt="">
+                                <div class="shop-content">
+                                    <h4>Lenovo</h4>
+                                    <p>i7 8Gth</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="featured-products" class="featured-section">
+                <div class="container">
+
+                    <!-- TITRE -->
+                    <div class="section-header text-center mb-5">
+                        <span class="badge-section">PC</span>
+                        <h2>produits PC phares </h2>
+                        <p>Les meilleures ventes sélectionnées pour vous</p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge">PHARE</span>
+
+                                <div class="featured-image">
+                                    <img src="https://kesscomputers.com/cdn/shop/files/SquarePic_20240830_13594179_1200x.jpg?v=1725030793"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Mac Book</h4>
+                                    <p>I5</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">2999 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Mac Book" data-price="2999">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge hot">HOT</span>
+
+                                <div class="featured-image">
+                                    <img src="https://techtoro.io/image/cache/catalog/Blogs/MacBookAir15-Review/MacBookAir15-1920x1080.jpg"
+                                        alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>MacBookAir15</h4>
+                                    <p>Perfomant et élegant</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">809 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Mac Book AIrs 15"
+                                            data-price="809">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge new">NEW</span>
+
+                                <div class="featured-image">
+                                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>Ordinateur Ultra</h4>
+                                    <p>Puissance & rapidité</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">1299 €</span>
+                                        <button class="add-to-cart btn btn-dark" data-name="Ordinateur Ultra"
+                                            data-price="1299">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="featured-card">
+
+                                <span class="featured-badge sale">-20%</span>
+
+                                <div class="featured-image">
+                                    <img src="https://m.media-amazon.com/images/I/71Hy5SYr3tL._AC_SL1500_.jpg" alt="">
+                                </div>
+
+                                <div class="featured-content">
+                                    <h4>AC</h4>
+                                    <p>_AC_SL1500_</p>
+
+                                    <div class="featured-bottom">
+                                        <span class="price">
+                                            <small>199 €</small> 159 €
+                                        </span>
+                                        <button class="add-to-cart btn btn-dark" data-name="AC _AC_SL1500_"
+                                            data-price="159">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- BOUTON ACCÈS BOUTIQUE -->
+                        <div class="text-center mt-5">
+                            <a href="shop.html" class="btn btn-primary btn-lg px-5 rounded-pill shadow-lg">
+                                <i class="fa-solid fa-store me-2"></i>
+                                Accéder aux Ordinateurs
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="triple-showcase">
+                <div class="container">
+                    <span class="badge-section">Excellences </span>
+                    <div class="showcase-grid">
+
+                        <!-- PRODUIT 1 - GRAND -->
+                        <div class="showcase-card large">
+                            <img src="https://previews.123rf.com/images/gpointstudio/gpointstudio1501/gpointstudio150100165/35169558-shopping-is-the-best-medicine-for-women.jpg"
+                                alt="">
+                            <div class="showcase-overlay">
+                                <h3>Shopping</h3>
+                                <p>Le Shopping Est Le Meilleur Remède Pour Les Femmes Banque D'Images et Photos Libres
+                                    De Droits. Image 35169558
+                                </p>
+                                <div class="showcase-actions">
+                                    <button class="add-to-cart btn btn-dark" data-name="Robe et un sac a main "
+                                        data-price="70">
+                                        <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                    </button>
+                                    <a href="#" class="icon-btn"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="#" class="icon-btn"><i class="fa-solid fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT 2 - MOYEN -->
+                        <div class="showcase-card medium">
+                            <img src="https://thumbs.dreamstime.com/b/afro-am%C3%A9ricaine-femme-homme-et-fille-marchant-avec-des-sacs-de-shopping-heureux-noir-leur-petite-mignonne-marcher-ensemble-215175575.jpg"
+                                alt="">
+                            <div class="showcase-overlay">
+                                <h4> Femme Homme Et Fille Marchant Avec Des Sacs De Shopping</h4>
+                                <div class="showcase-actions">
+                                    <button class="add-to-cart btn btn-dark" data-name="sac a macrher" data-price="29">
+                                        <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                    </button>
+                                    <a href="#" class="icon-btn"><i class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUIT 3 - PETIT -->
+                        <div class="showcase-card small">
+                            <img src="https://media.istockphoto.com/id/1366731738/fr/photo/acheter-un-nouvel-appareil-num%C3%A9rique-couple-heureux-achetant-un-smartphone-en-magasin.jpg?s=612x612&w=0&k=20&c=-2ffpqMnEl_LjLicTd09NhVLs_Tx1EXZzxxv2QpNy1E="
+                                alt="">
+                            <div class="showcase-overlay">
+                                <h4>589 000+ Phone Shop Photos</h4>
+                                <div class="showcase-actions">
+                                    <button class="add-to-cart btn btn-dark" data-name="sac" data-price="9">
+                                        <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="collection-section">
+                <div class="container">
+
+                    <!-- TITRE -->
+                    <div class="section-header text-center mb-5">
+                        <span class="badge-section">Des collections</span>
+                        <h2>Découvrez nos collections exclusives</h2>
+                        <p>Des produits tendance sélectionnés avec soin</p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- COLLECTION CARD -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="collection-card">
+
+                                <div class="collection-img">
+                                    <img src="https://thumbs.dreamstime.com/b/boutique-de-la-mode-des-hommes-66690288.jpg"
+                                        alt="">
+                                    <div class="collection-overlay">
+                                        <button class="add-to-cart btn btn-dark" data-name="Costumes" data-price="299">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="collection-content">
+                                    <h4>Collection Mode</h4>
+                                    <p>Vêtements modernes & tendances</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- COLLECTION CARD -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="collection-card">
+
+                                <div class="collection-img">
+                                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="">
+                                    <div class="collection-overlay">
+                                        <button class="add-to-cart btn btn-dark" data-name="montre" data-price="252">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="collection-content">
+                                    <h4>Montres Premium</h4>
+                                    <p>Élégance & précision</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- COLLECTION CARD -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="collection-card">
+
+                                <div class="collection-img">
+                                    <img src="https://i.pinimg.com/236x/8e/eb/45/8eeb4507b894a2bc523ff70436fc5a65.jpg"
+                                        alt="">
+                                    <div class="collection-overlay">
+                                        <button class="add-to-cart btn btn-dark" data-name="Chaussures"
+                                            data-price="109">
+                                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="collection-content">
+                                    <h4>Chaussures </h4>
+                                    <p> Italia</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="gallery-section">
+                <div class="container-fluid">
+
+                    <!-- TITRE -->
+                    <div class="gallery-header text-center">
+                        <span class="badge-section">Mixes</span>
+                        <p>Découvrez nos produits phares et ajoutez-les au panier</p>
+                    </div>
+
+                    <!-- CONTROLES -->
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-btn next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- GALERIE -->
+                    <div class="gallery-wrapper" id="galleryScroll">
+
+                        <!-- ITEM -->
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+                            <div class="gallery-overlay">
+                                <h4>Montre Luxe</h4>
+                                <span>249 </span>
+                                <button class="add-to-cart btn btn-dark" data-name="montre lux" data-price="249">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+                            <div class="gallery-overlay">
+                                <h4>Vêtement Mode</h4>
+                                <span>120 DT</span>
+                                <button class="add-to-cart btn btn-dark" data-name="Vetement mode " data-price="120">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1585386959984-a41552231693">
+                            <div class="gallery-overlay">
+                                <h4>Téléphone Pro</h4>
+                                <span>1890</span>
+                                <button class="add-to-cart btn btn-dark" data-name="telephone Pro" data-price="1890">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+                            <div class="gallery-overlay">
+                                <h4>Ordinateur</h4>
+                                <span>2599 DT</span>
+                                <button class="add-to-cart btn btn-dark" data-name="ordinateur" data-price="2599">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+                            <div class="gallery-overlay">
+                                <h4>Chaussures</h4>
+                                <span>180 DT</span>
+                                <button class="add-to-cart btn btn-dark" data-name="Chaussures" data-price="180">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+                            <div class="gallery-overlay">
+                                <h4>Chaînette</h4>
+                                <span>95 </span>
+                                <button class="add-to-cart btn btn-dark" data-name="chainnets " data-price="95">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+                            <div class="gallery-overlay">
+                                <h4>Montre Classique</h4>
+                                <span>210 </span>
+                                <button class="add-to-cart btn btn-dark" data-name="Montre classique" data-price="210">
+                                    <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 📌 FOOTER -->
+            <footer class="footer-ultra">
+                <div class="footer-glow"></div>
+
+                <div class="container">
+
+                    <!-- TOP -->
+                    <div class="footer-top">
+
+                        <!-- BRAND -->
+                        <div class="footer-col brand">
+                            <h2 class="logo">
+                                <i class="fa-solid fa-bag-shopping"></i> ShopModern
+                            </h2>
+                            <p>
+                                La plateforme e-commerce moderne, rapide et sécurisée. L’excellence digitale au service
+                                de vos
+                                achats.
+                            </p>
+                            <div class="footer-divider"></div>
+                        </div>
+
+                        <!-- NAV -->
+                        <div class="footer-col">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="produit.html">Produits</a></li>
+                                <li><a href="#">Collections</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <div class="footer-divider"></div>
+                        </div>
+
+                        <!-- SUPPORT -->
+                        <div class="footer-col">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Livraison</a></li>
+                                <li><a href="#">Retours</a></li>
+                                <li><a href="#">Paiement</a></li>
+                            </ul>
+                            <div class="footer-divider"></div>
+                        </div>
+
+                        <!-- NEWSLETTER -->
+                        <div class="footer-col newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Offres exclusives & nouveautés</p>
+
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Votre email">
+                                <button>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+                            <div class="footer-divider"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- BOTTOM -->
+                    <div class="footer-bottom">
+
+                        <div class="socials">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+
+                        <div class="legal">
+                            <a href="#">Politique de confidentialité</a>
+                            <span>•</span>
+                            <a href="#">Conditions</a>
+                            <span>•</span>
+                            <a href="#">Mentions légales</a>
+                        </div>
+
+                        <p class="copyright">
+                            © 2025 ShopModern — Tous droits réservés
+                        </p>
+
+                    </div>
+
+                </div>
+            </footer>
+            <!-- JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js/products.js"></script>
+            <script src="js/app.js"></script>
+            <script src="script.js"></script>
+
+</body>
+
+</html>

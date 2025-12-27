@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce | Page Ordinateur</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Style perso -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-description {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 28px;
+            height: 28px;
+
+            margin-left: 8px;
+            border-radius: 50%;
+
+            background: #f1f1f1;
+            color: #555;
+
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .btn-description i {
+            font-size: 0.85rem;
+        }
+
+        .btn-description:hover {
+            background: #0d6efd;
+            color: #fff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🌐 NAVBAR MODERNE -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-3 text-primary" href="#">
+                <i class="fa-solid fa-bag-shopping"></i> Hermand Business
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-3 align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produit.html">Produit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Femme.html">Femme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produithomme.html">Homme</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Femme.html">Télephones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-primary px-4 rounded-pill" href="cart.html">
+                            <i class="fa-solid fa-cart-shopping me-1"></i> Panier
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🎯 HERO SECTION MODERNE -->
+    <header class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3 animate-fade">
+                Nouveaux arrivages pour hommes
+            </h1>
+            <p class="fs-5 mb-4 animate-fade delay-1">
+                Découvrez nos dernières collections de vêtements et accessoires pour hommes. De la mode urbaine à la
+                mode classique, nous avons tout ce qu'il vous faut pour rester élégant
+            </p>
+            <a href="" class="btn btn-light btn-lg px-5 py-2 rounded-pill shadow animate-fade delay-2">
+                Explorer maintenant
+            </a>
+        </div>
+    </header>
+
+
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- IMAGE GAUCHE : CAROUSEL -->
+                <!-- CAROUSEL -->
+                <div class="col-lg-6">
+                    <div id="aboutCarousel" class="carousel slide about-carousel" data-bs-ride="carousel">
+
+                        <div class="carousel-inner rounded-4 shadow-lg">
+
+                            <!-- SLIDE 1 -->
+                            <div class="carousel-item active">
+                                <img src="https://api.congomart.com/api/uploads/1708285704137.jpg"
+                                    class="d-block w-100 about-carousel-img" alt="Collaboration">
+
+                                <div class="carousel-text">
+                                    <h3>Les meilleures marques pour hommes</h3>
+                                    <p>Nous proposons les meilleures marques de vêtements et accessoires pour hommes,
+                                        telles que Tommy Hilfiger, Calvin Klein et bien d'autres.</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="carousel-item">
+                                <img src="https://jamaissansmacravate.fr/wp-content/uploads/2018/10/pexels-photo-404168.jpeg"
+                                    class="d-block w-100 about-carousel-img" alt="Innovation">
+
+                                <div class="carousel-text">
+                                    <h3>Les tendances de la saison</h3>
+                                    <p>Découvrez les dernières tendances de la mode masculine. Des pantalons slim aux
+                                        chemises à carreaux, nous avons tout ce qu'il vous faut pour rester à la mode.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 -->
+                            <div class="carousel-item">
+                                <img src="https://cdn0.mariages.net/vendor/1350/3_2/640/jpeg/img-1911_3_321350-170853072120218.jpeg"
+                                    class="d-block w-100 about-carousel-img" alt="Expertise">
+
+                                <div class="carousel-text">
+                                    <h3>Les accessoires pour hommes</h3>
+                                    <p>Complétez votre look avec nos accessoires pour hommes. Des montres aux ceintures,
+                                        nous avons tout ce qu'il vous faut pour ajouter une touche d'élégance à votre
+                                        tenue.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://adn-style.fr/wp-content/uploads/2018/03/boutique-pret-%C3%A0-porterr-homme-adn-style-lesneven.jpg"
+                                    class="d-block w-100 about-carousel-img" alt="Expertise">
+
+                                <div class="carousel-text">
+                                    <h3>- Les soldes pour hommes</h3>
+                                    <p>Profitez de nos soldes pour hommes et découvrez des offres incroyables sur nos
+                                        produits. Ne manquez pas cette opportunité de renouveler votre garde-robe à des
+                                        prix imbattables.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- CONTROLS -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- TEXTE DROITE -->
+
+
+                <!--apropos de-->
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <span class="badge-about">Page hommes</span>
+                        <h2>Mode, Accessoires et Plus</h2>
+                        <p>
+                            Découvrez la collection de mode pour hommes la plus complète. Des vêtements aux accessoires,
+                            en passant par les chaussures et les montres, nous avons tout ce qu'il vous faut pour rester
+                            élégant et à la mode.
+                        </p>
+
+                        <ul class="about-list">
+                            <li><i class="fa-solid fa-check"></i> choisir le costume parfait pour un mariage</li>
+                            <li><i class="fa-solid fa-check"></i> mode masculine pour la saison</li>
+                            <li><i class="fa-solid fa-check"></i> un look avec des montres et des ceintures</li>
+                        </ul>
+
+                        <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--homme 1-->
+
+
+
+    <section id="featured-products" class="featured-section">
+        <div class="container">
+
+            <!-- TITRE -->
+            <div class="section-header text-center mb-5">
+                <span class="badge-section">Produits Hommes</span>
+                <h2></h2>
+                <p>Nous disponsons De vêtements de qualités qui repondent a vos besoins</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- PRODUIT 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge">PHARE</span>
+
+                        <div class="featured-image">
+                            <img src="https://img.freepik.com/photos-gratuite/belle-mode-vetements-decontractes-pour-hommes_1203-7836.jpg?semt=ais_hybrid&w=740&q=80"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Ensembles</h4>
+                            <p>pantalons et chaussures</p>
+
+                            <!-- DESCRIPTION CACHÉE -->
+                            <p class="product-description" style="display:none;">
+                                les ensembles disponible et moderne pour les hommes
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">29 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge hot">HOT</span>
+
+                        <div class="featured-image">
+                            <img src="https://media.gqmagazine.fr/photos/64f1bd29e92de61798046928/16:9/w_2560%2Cc_limit/Se%25CC%2581lecta_rentre%25CC%2581e.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Jaquette</h4>
+                            <p>choisir votre Gout</p>
+
+                            <p class="product-description" style="display:none;">
+                                les jaquette de trés haute qualités pour vous proteger
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">2999 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge new">NEW</span>
+
+                        <div class="featured-image">
+                            <img src="https://media.istockphoto.com/id/1837382224/fr/photo/jeune-homme-noir-au-shopping.jpg?s=612x612&w=0&k=20&c=eStG5bXuAX-h5gVY-pyWkMxnF3jjM4CX_2sGAY69eA0="
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Pantalon Djines</h4>
+                            <p>Voir Nos pantalons</p>
+
+                            <p class="product-description" style="display:none;">
+                                les pantalons de tres hautes qualités
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">299 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge sale">-20%</span>
+
+                        <div class="featured-image">
+                            <img src="https://img.grouponcdn.com/seocms/59kptLGbmg2kAf6sFwLb/WT-902x600/v1/c600x390.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Cost</h4>
+                            <p>Le Constume moderne</p>
+
+                            <p class="product-description" style="display:none;">
+                                les costumes moderne
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">29 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://www.loding.fr/cdn/shop/files/chaussure-homme-richelieu-one-cut-cuir-marron-375_1_2048x.jpg?v=1712939687"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chassures</h4>
+                            <p>Un chaussures marque Italia</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://www.challenges.fr/_ipx/f_webp&enlarge_true&fit_cover&s_1360x840/cha/static/s3fs-public/2023-09/rodd-gunn.jpg%3FVersionId=mzgwIm9V6WcLAxtR0hT4y9tYgtNhxA.O"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chelsea boot</h4>
+                            <p>avec un double semmelle</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://www.bexley.fr/fstrz/r/s/www.bexley.fr/media/wysiwyg/guides-produits/chaussures/chaussures-boucles-homme-2.jpg"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chaussures </h4>
+                            <p> Italia</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--hommes 2s-->
+
+    <section id="featured-products" class="featured-section">
+        <div class="container">
+
+            <!-- TITRE -->
+            <div class="row g-4">
+
+                <!-- PRODUIT 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge">PHARE</span>
+
+                        <div class="featured-image">
+                            <img src="https://www.cdiscount.com/pdt2/8/2/1/3/700x700/mp82878821/rw/sandales-homme-simili-cuir-aeration-anti-derapant.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>sandales trés moedernes</h4>
+                            <p>pantalons et chaussures</p>
+
+                            <!-- DESCRIPTION CACHÉE -->
+                            <p class="product-description" style="display:none;">
+                                les ensembles disponible et moderne pour les hommes
+                            </p>
+                            <div class="featured-bottom">
+                                <span class="price">29 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge hot">HOT</span>
+
+                        <div class="featured-image">
+                            <img src="https://media.intersport.fr/is/image/intersportfr/QUIEH8_LXD_Q1?$product_grey$&layer=comp&fit=constrain,0&$produit_xl$&fmt=webp"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Jaquette</h4>
+                            <p>choisir votre Gout</p>
+
+                            <p class="product-description" style="display:none;">
+                                les jaquette de trés haute qualités pour vous proteger
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">2999 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge new">NEW</span>
+
+                        <div class="featured-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGS0Tan6yAYfFsGjRJVZZWvuWeS6IBkWQRbg&s"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Pantalon Djines</h4>
+                            <p>Voir Nos pantalons</p>
+
+                            <p class="product-description" style="display:none;">
+                                les pantalons de tres hautes qualités
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">299 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge sale">-20%</span>
+
+                        <div class="featured-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS93eCyBZ8bklBw91dfkLGDtFbsi_08gKt8g&s"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Cost</h4>
+                            <p>Le Constume moderne</p>
+
+                            <p class="product-description" style="display:none;">
+                                les costumes moderne
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">29 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://images.coinafrique.com/thumb_4077156_uploaded_image3_1675369726.jpeg"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chassures</h4>
+                            <p>Un chaussures marque Italia</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9BqjOCNeACT6ZJSz9oclLSuM25SJSabtTA&s"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chelsea boot</h4>
+                            <p>avec un double semmelle</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIapO_wNFb1hGqTxyBGjNypqgiUJ07kolIg&s"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chaussures </h4>
+                            <p> Italia</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="triple-showcase">
+        <div class="container">
+            <span class="badge-section">Tendance</span>
+            <div class="showcase-grid">
+
+                <!-- PRODUIT 1 - GRAND -->
+                <div class="showcase-card large">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="">
+                    <div class="showcase-overlay">
+                        <h3>Montre Premium</h3>
+                        <p>Élégance & précision</p>
+                        <div class="showcase-actions">
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 2 - MOYEN -->
+                <div class="showcase-card medium">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="">
+                    <div class="showcase-overlay">
+                        <h4>Smartphone Pro</h4>
+                        <div class="showcase-actions">
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 3 - PETIT -->
+                <div class="showcase-card small">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="">
+                    <div class="showcase-overlay">
+                        <h4>Chaussures</h4>
+                        <div class="showcase-actions">
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--homme Trois -->
+
+
+
+
+    <section id="featured-products" class="featured-section">
+        <div class="container">
+
+            <!-- TITRE -->
+            <div class="row g-4">
+
+                <!-- PRODUIT 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge">PHARE</span>
+
+                        <div class="featured-image">
+                            <img src="https://www.cdiscount.com/pdt2/8/2/1/3/700x700/mp82878821/rw/sandales-homme-simili-cuir-aeration-anti-derapant.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>sandales trés moedernes</h4>
+                            <p>pantalons et chaussures</p>
+
+                            <!-- DESCRIPTION CACHÉE -->
+                            <p class="product-description" style="display:none;">
+                                les ensembles disponible et moderne pour les hommes
+                            </p>
+                            <div class="featured-bottom">
+                                <span class="price">29 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge hot">HOT</span>
+
+                        <div class="featured-image">
+                            <img src="https://media.intersport.fr/is/image/intersportfr/QUIEH8_LXD_Q1?$product_grey$&layer=comp&fit=constrain,0&$produit_xl$&fmt=webp"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Jaquette</h4>
+                            <p>choisir votre Gout</p>
+
+                            <p class="product-description" style="display:none;">
+                                les jaquette de trés haute qualités pour vous proteger
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">2999 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge new">NEW</span>
+
+                        <div class="featured-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGS0Tan6yAYfFsGjRJVZZWvuWeS6IBkWQRbg&s"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Pantalon Djines</h4>
+                            <p>Voir Nos pantalons</p>
+
+                            <p class="product-description" style="display:none;">
+                                les pantalons de tres hautes qualités
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">299 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-card">
+                        <span class="featured-badge sale">-20%</span>
+
+                        <div class="featured-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS93eCyBZ8bklBw91dfkLGDtFbsi_08gKt8g&s"
+                                alt="">
+                        </div>
+
+                        <div class="featured-content">
+                            <h4>Cost</h4>
+                            <p>Le Constume moderne</p>
+
+                            <p class="product-description" style="display:none;">
+                                les costumes moderne
+                            </p>
+
+                            <div class="featured-bottom">
+                                <span class="price">29 €</span>
+
+                                <!-- ICÔNE DESCRIPTION -->
+                                <a href="#" class="btn-description" title="Voir la description">
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+
+                                <!-- PANIER -->
+                                <a href="#" class="btn btn-featured">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://images.coinafrique.com/thumb_4077156_uploaded_image3_1675369726.jpeg"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chassures</h4>
+                            <p>Un chaussures marque Italia</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9BqjOCNeACT6ZJSz9oclLSuM25SJSabtTA&s"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chelsea boot</h4>
+                            <p>avec un double semmelle</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLLECTION CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="collection-card">
+
+                        <div class="collection-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIapO_wNFb1hGqTxyBGjNypqgiUJ07kolIg&s"
+                                alt="">
+                            <div class="collection-overlay">
+                                <button class="btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="collection-content">
+                            <h4>Chaussures </h4>
+                            <p> Italia</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="triple-showcase">
+        <div class="container">
+            <span class="badge-section">Tendance</span>
+            <div class="showcase-grid">
+
+                <!-- PRODUIT 1 - GRAND -->
+                <div class="showcase-card large">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="">
+                    <div class="showcase-overlay">
+                        <h3>Montre Premium</h3>
+                        <p>Élégance & précision</p>
+                        <div class="showcase-actions">
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 2 - MOYEN -->
+                <div class="showcase-card medium">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="">
+                    <div class="showcase-overlay">
+                        <h4>Smartphone Pro</h4>
+                        <div class="showcase-actions">
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 3 - PETIT -->
+                <div class="showcase-card small">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="">
+                    <div class="showcase-overlay">
+                        <h4>Chaussures</h4>
+                        <div class="showcase-actions">
+                            <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="gallery-section">
+        <div class="container-fluid">
+
+            <!-- TITRE -->
+            <div class="gallery-header text-center">
+                <span class="badge-section">Mixes</span>
+                <p>Découvrez nos produits phares et ajoutez-les au panier</p>
+            </div>
+
+            <!-- CONTROLES -->
+            <div class="gallery-controls">
+                <button class="gallery-btn prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="gallery-btn next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- GALERIE -->
+            <div class="gallery-wrapper" id="galleryScroll">
+
+                <!-- ITEM -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+                    <div class="gallery-overlay">
+                        <h4>Montre Luxe</h4>
+                        <span>249 DT</span>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i> Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+                    <div class="gallery-overlay">
+                        <h4>Vêtement Mode</h4>
+                        <span>120 DT</span>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Ajouter</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a41552231693">
+                    <div class="gallery-overlay">
+                        <h4>Téléphone Pro</h4>
+                        <span>1890 DT</span>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Ajouter</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+                    <div class="gallery-overlay">
+                        <h4>Ordinateur</h4>
+                        <span>2599 DT</span>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Ajouter</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+                    <div class="gallery-overlay">
+                        <h4>Chaussures</h4>
+                        <span>180 DT</span>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Ajouter</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+                    <div class="gallery-overlay">
+                        <h4>Chaînette</h4>
+                        <span>95 DT</span>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Ajouter</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+                    <div class="gallery-overlay">
+                        <h4>Montre Classique</h4>
+                        <span>210 DT</span>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Ajouter</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="mission" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- TEXTE GAUCHE -->
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="about-content">
+                        <span class="badge-about">Voici</span>
+
+                        <h2>Découvrez notre collection de mode pour hommes et restez élégant </h2>
+
+                        <p>
+                            Notre mission est d’aider les entreprises à exploiter pleinement
+                            le potentiel du numérique grâce à des solutions fiables,
+                            évolutives et centrées sur l’utilisateur.
+                        </p>
+
+                        <ul class="about-list">
+                            <li><i class="fa-solid fa-check"></i> Profitez de nos soldes et découvrez des offres
+                                incroyables</li>
+                            <li><i class="fa-solid fa-check"></i> Performance & sécurité</li>
+                            <li><i class="fa-solid fa-check"></i> Suivi et accompagnement continu</li>
+                        </ul>
+
+                        <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                            Découvrir notre mission
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IMAGE DROITE : CAROUSEL -->
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div id="missionCarousel" class="carousel slide carousel-fade about-carousel"
+                        data-bs-ride="carousel" data-bs-interval="4000">
+
+                        <div class="carousel-inner rounded-4 shadow-lg">
+
+                            <!-- SLIDE 1 -->
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                                    class="d-block w-100 about-carousel-img" alt="Collaboration">
+
+                                <div class="carousel-text">
+                                    <h3>Collaboration & Partenariat</h3>
+                                    <p>Construisons ensemble des solutions digitales durables</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                                    class="d-block w-100 about-carousel-img" alt="Innovation">
+
+                                <div class="carousel-text">
+                                    <h3>Innovation & Technologie</h3>
+                                    <p>Des outils modernes pour des performances élevées</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 -->
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                                    class="d-block w-100 about-carousel-img" alt="Expertise">
+
+                                <div class="carousel-text">
+                                    <h3>Expertise & Savoir-faire</h3>
+                                    <p>Une équipe qualifiée au service de vos projets</p>
+                                </div>
+                            </div>
+
+                            <!-- CONTROLS -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#missionCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#missionCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- 📌 FOOTER -->
+    <footer class="footer-ultra">
+        <div class="footer-glow"></div>
+
+        <div class="container">
+
+            <!-- TOP -->
+            <div class="footer-top">
+
+                <!-- BRAND -->
+                <div class="footer-col brand">
+                    <h2 class="logo">
+                        <i class="fa-solid fa-bag-shopping"></i> ShopModern
+                    </h2>
+                    <p>
+                        La plateforme e-commerce moderne, rapide et sécurisée. L’excellence digitale au service
+                        de vos
+                        achats.
+                    </p>
+                    <div class="footer-divider"></div>
+                </div>
+
+                <!-- NAV -->
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produit.html">Produits</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="footer-divider"></div>
+                </div>
+
+                <!-- SUPPORT -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Paiement</a></li>
+                    </ul>
+                    <div class="footer-divider"></div>
+                </div>
+
+                <!-- NEWSLETTER -->
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Offres exclusives & nouveautés</p>
+
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="footer-divider"></div>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <span>•</span>
+                    <a href="#">Conditions</a>
+                    <span>•</span>
+                    <a href="#">Mentions légales</a>
+                </div>
+
+                <p class="copyright">
+                    © 2025 ShopModern — Tous droits réservés
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector(".navbar");
+            nav.classList.toggle("scrolled", window.scrollY > 50);
+        });
+        const gallery = document.getElementById("galleryScroll");
+        const next = document.querySelector(".gallery-btn.next");
+        const prev = document.querySelector(".gallery-btn.prev");
+
+        const scrollValue = 350;
+
+        next.onclick = () => gallery.scrollLeft += scrollValue;
+        prev.onclick = () => gallery.scrollLeft -= scrollValue;
+        document.querySelectorAll(".btn-description").forEach(icon => {
+            icon.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const desc = this
+                    .closest(".featured-content")
+                    .querySelector(".product-description");
+
+                desc.style.display =
+                    (desc.style.display === "block") ? "none" : "block";
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

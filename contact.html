@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | ShopModern</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --accent: #22d3ee;
+            --accent-2: #6366f1;
+            --dark: #808dc7;
+            --glass: rgba(255, 255, 255, 0.08);
+            --border: rgba(60, 39, 108, 0.18);
+            --text: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1e293b, var(--dark));
+            color: var(--text);
+        }
+
+        /* HERO */
+        .contact-hero {
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+
+        .contact-hero h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-hero p {
+            opacity: .8;
+            margin-top: 10px;
+        }
+
+        /* SECTION */
+        .contact-section {
+            padding: 60px 20px 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* CONTACT CARDS */
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .contact-card {
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border);
+            padding: 35px 20px;
+            text-align: center;
+            border-radius: 24px;
+            transition: .4s ease;
+            cursor: pointer;
+        }
+
+        .contact-card i {
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h4 {
+            margin-bottom: 6px;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-12px) scale(1.04);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, .45);
+        }
+
+        /* ICON COLORS */
+        .whatsapp i {
+            color: #25D366
+        }
+
+        .discord i {
+            color: #5865F2
+        }
+
+        .mail i {
+            color: #38bdf8
+        }
+
+        .phone i {
+            color: #22c55e
+        }
+
+        .instagram i {
+            color: #e1306c
+        }
+
+        .telegram i {
+            color: #229ED9
+        }
+
+        /* FORM BOX */
+        .contact-form-box {
+            position: relative;
+            max-width: 650px;
+            margin: auto;
+            background: linear-gradient(180deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .02));
+            border: 1px solid var(--border);
+            backdrop-filter: blur(20px);
+            padding: 55px;
+            border-radius: 30px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .55);
+        }
+
+        .contact-form-box::before {
+            content: "";
+            position: absolute;
+            inset: -3px;
+            border-radius: 32px;
+            background: linear-gradient(120deg, transparent, var(--accent), var(--accent-2), transparent);
+            opacity: .18;
+            filter: blur(35px);
+            z-index: -1;
+        }
+
+        .contact-form-box h2 {
+            text-align: center;
+            font-size: 2rem;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-form-box p {
+            text-align: center;
+            opacity: .75;
+            margin-bottom: 40px;
+        }
+
+        /* INPUTS */
+        .input-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 16px 50px 16px 18px;
+            background: rgba(2, 6, 23, .75);
+            border: 1px solid rgba(255, 255, 255, .14);
+            border-radius: 16px;
+            color: #fff;
+            outline: none;
+            transition: .4s;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form label {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: .9rem;
+            color: rgba(255, 255, 255, .55);
+            pointer-events: none;
+            transition: .3s;
+        }
+
+        .contact-form i {
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, .45);
+            transition: .4s;
+        }
+
+        /* FLOAT LABEL */
+        .contact-form input:focus+label,
+        .contact-form textarea:focus+label,
+        .contact-form input:valid+label,
+        .contact-form textarea:valid+label {
+            top: -9px;
+            font-size: .75rem;
+            color: var(--accent);
+            background: var(--dark);
+            padding: 0 6px;
+            border-radius: 6px;
+        }
+
+        /* FOCUS */
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent);
+            box-shadow:
+                0 0 0 2px rgba(34, 211, 238, .25),
+                0 12px 30px rgba(34, 211, 238, .25);
+        }
+
+        .contact-form input:focus~i,
+        .contact-form textarea:focus~i {
+            color: var(--accent);
+        }
+
+        /* TEXTAREA ICON FIX */
+        .input-group.textarea i {
+            top: 20px;
+            transform: none;
+        }
+
+        /* BUTTON */
+        .contact-form button {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: .4s;
+            box-shadow:
+                0 18px 40px rgba(34, 211, 238, .45),
+                inset 0 0 0 1px rgba(255, 255, 255, .2);
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 70px rgba(99, 102, 241, .55);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:600px) {
+            .contact-hero h1 {
+                font-size: 2.3rem
+            }
+
+            .contact-form-box {
+                padding: 35px 25px
+            }
+        }
+
+
+        /* CARDS CLICKABLE */
+        .contact-card {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .contact-card:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        .contact-card:hover i {
+            transform: scale(1.15);
+        }
+    </style>
+
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <section class="contact-hero">
+        <h1>Contactez-nous</h1>
+        <p>Nous sommes toujours disponibles pour vous aider</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+
+            <div class="contact-cards">
+
+                <a href="https://wa.me/21699999999" target="_blank" class="contact-card whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>WhatsApp</h4>
+                    <p>+216 5555 03 59</p>
+                </a>
+
+                <a href="https://discord.gg/XXXXXX" target="_blank" class="contact-card discord">
+                    <i class="fab fa-discord"></i>
+                    <h4>Discord</h4>
+                    <p>Meyadr_47356</p>
+                </a>
+
+                <a href="mailto:contact@shopmodern.com" class="contact-card mail">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>oseedoro@gmail.com</p>
+                </a>
+
+                <a href="tel:+21622333444" class="contact-card phone">
+                    <i class="fas fa-phone"></i>
+                    <h4>Téléphone</h4>
+                    <p>+216 5555 03 59</p>
+                </a>
+
+                <a href="https://instagram.com/shopmodern" target="_blank" class="contact-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h4>Instagram</h4>
+                    <p>@shopmodern</p>
+                </a>
+
+                <a href="https://t.me/shopmodern" target="_blank" class="contact-card telegram">
+                    <i class="fab fa-telegram"></i>
+                    <h4>Telegram</h4>
+                    <p>@shopmodern</p>
+                </a>
+
+            </div>
+
+            <!-- FORM -->
+            <div class="contact-form-box">
+                <h2>Envoyez-nous un message</h2>
+                <p>Nous vous répondrons rapidement</p>
+
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Nom complet</label>
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Email</label>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Sujet</label>
+                        <i class="fas fa-tag"></i>
+                    </div>
+
+                    <div class="input-group textarea">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                        <i class="fas fa-comment"></i>
+                    </div>
+
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
